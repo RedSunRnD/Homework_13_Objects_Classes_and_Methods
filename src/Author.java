@@ -29,12 +29,12 @@ public class Author {
         return "Имя автора: " + firstName + ' ' + lastName;
     }
 
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Author x = (Author) other;
-        return firstName.equals(x.firstName) && lastName.equals(x.lastName);
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(firstName, author.firstName) && Objects.equals(lastName, author.lastName);
     }
 
     public int hashCode() {

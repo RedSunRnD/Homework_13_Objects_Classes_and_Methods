@@ -5,7 +5,7 @@ public class Main {
         Author sergeyDovlatov = new Author("Сергей", "Довлатов");
         Book nochnoyDozor = new Book("Ночной Дозор", sergeyLukyanenko, 1998);
         Book generationP = new Book("Generation П", viktorPelevin, 1990);
-        Book dozori = new Book("Ночной дозор", sergeyLukyanenko, 1998);
+        Book dozori = new Book("Ночной Дозор", sergeyLukyanenko, 1998);
         System.out.println("nochnoyDozor.equals(dozori) = " + nochnoyDozor.equals(dozori));
         System.out.println("sergeyDovlatov = " + sergeyDovlatov);
         System.out.println("generationP = " + generationP);

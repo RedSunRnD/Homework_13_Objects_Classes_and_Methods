@@ -31,12 +31,12 @@ public class Book {
         return "Название книги: " + name + ", " + author.toString() + ", Год выпуска: " + year;
     }
 
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Book x = (Book) other;
-        return name.equalsIgnoreCase(x.name) && author.equals(x.author) && year == x.year;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return year == book.year && Objects.equals(name, book.name) && Objects.equals(author, book.author);
     }
 
     public int hashCode() {
