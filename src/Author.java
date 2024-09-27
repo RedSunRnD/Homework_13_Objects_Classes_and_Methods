@@ -40,4 +40,5 @@ public class Author {
     public int hashCode() {
         return java.util.Objects.hash(firstName, lastName);
     }
+
 }

@@ -9,5 +9,6 @@ public class Main {
         System.out.println("nochnoyDozor.equals(dozori) = " + nochnoyDozor.equals(dozori));
         System.out.println("sergeyDovlatov = " + sergeyDovlatov);
         System.out.println("generationP = " + generationP);
+        System.out.println("sergeyDovlatov.equals(sergeyLukyanenko) = " + sergeyDovlatov.equals(sergeyLukyanenko));
     }
 }
